@@ -1,0 +1,14 @@
+---
+title: "Milestone_3"
+author: "Grace Rotondo"
+date: "9/30/2019"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+For my project, I want to create an alumni directory for the Harvard Women's Lacrosse team. To do so, I will collect rosters of years past. I will get some of the rosters from GoCrimson.com and some from old pdfs as rosters from years 2007- present are on GoCrimson and years 1985 - 2006 are pdfs. I'm planning on looking at rosters from 20-30 years back and will decide how mnay once I stary actually looking at the data. I think I will take the data from those sources and compile it into an excel spreadsheet. In addition, I want to find data on alumni's careers, so I will have to look up their LinkedIn information. Once I find this information, I will put the data in an excel spreadsheet. The metrics that I will be looking at are Occupation, Industry, and Area. 
