@@ -7,8 +7,20 @@ output: html_document
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
+library(readxl)
 ```
 
 
-For my project, I want to create an alumni directory for the Harvard Women's Lacrosse team. To do so, I will collect rosters of years past. I will get some of the rosters from GoCrimson.com and some from old pdfs as rosters from years 2007- present are on GoCrimson and years 1985 - 2006 are pdfs. I'm planning on looking at rosters from 20-30 years back and will decide how mnay once I stary actually looking at the data. I think I will take the data from those sources and compile it into an excel spreadsheet. In addition, I want to find data on alumni's careers, so I will have to look up their LinkedIn information. Once I find this information, I will put the data in an excel spreadsheet. The metrics that I will be looking at are Occupation, Industry, and Area. 
+For my project, I want to create an alumni directory for the Harvard Women's Lacrosse team. To do so, I will collect rosters of years past. I've started to compile data in an excel spreadsheet from the Women's Lacrosse Letterwinners's list, but I will also look into the rosters from GoCrimson.com and from old pdfs as rosters from years 2007- present are on GoCrimson and years 1985 - 2006 are pdfs. I'm planning on looking at rosters from 20-30 years back and will decide how many once I stary actually looking at the data. In addition, I want to find data on alumni's careers, so I will have to look up their LinkedIn information. Once I find this information, I will put the data in an excel spreadsheet. The metrics that I will be looking at are Occupation, Industry, and Area. I know that not all alums have LinkedIn accounts. I'm still trying to figure out how to go about this - I reached out to a Varsity Club director to inquire about another way to find alums' occupations; however I am waiting to hear back. 
+
+I'm also still conflicted on how this alumni directory will work. I think I will create a plot indicating the alums in the certain industries as a visual for our team; however, I need to brainstorm how to make this data meaningful.
+
+Below you'll find the start of a compilation of the Women's Lacrosse Letterwinner Data into an excel spreadsheet. This dataset only includes Varsity Letterwinners with last names ending in A and B, and some alums whose LinkedIn's I researched. It is very much incomplete, but I wanted to give you a glimpse into that data I will be looking at. 
+
+```{r}
+
+data <- read_excel("WLAX_LETTERWINNER_DATA.xlsx") 
+data
+```
+
